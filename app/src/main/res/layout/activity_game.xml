@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".activity_game">
+
+
+    <ImageView
+        android:id="@+id/anagram"
+        android:layout_width="match_parent"
+        android:layout_height="155dp"
+        android:src="@drawable/anagram" />
+
+
+    <TextView
+        android:id="@+id/tv_word"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/anagram"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/mdtp_accent_color_dark"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/guess"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="240dp"
+        android:ems="10"
+        android:hint=" Guess the word!"
+        android:inputType="textPersonName"
+        android:text="" />
+
+    <Button
+        android:id="@+id/b_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="152dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="CHECK"
+        android:textColor="@color/mdtp_white"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/b_new"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="61dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="NEW"
+        android:textColor="@color/mdtp_white"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
